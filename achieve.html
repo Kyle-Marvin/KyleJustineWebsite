@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<title>Achievements</title>
+	</head>
+	<style type="text/css">
+	    body {
+	      background-image: url('images/background2.jpg'); 
+	      background-size: cover;
+	      background-repeat: no-repeat;
+	      background-size: 100% 100%;
+	      font-family: Courier (sans-serif);
+	      text-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+	      color: white;
+	    }
+	    #achieve {
+	    	margin-left: 50px;
+	    	margin-top: 20px;
+	    	margin-bottom: 100px;
+	    }
+	    .nav {
+	    	background-color: #e16b19; 
+	    	padding-right: 25px; 
+	    	box-shadow: 0 0 0px black, 0 0 0px black, 0 0 10px black;
+	    }
+	    color: orange;
+	    }
+	    .hometext1 {
+	    	font-size: 40px;
+	    }
+	    header {
+	    	background-color: #e16b19;
+	    }
+	    .font {
+	    	font-family: Verdana (sans-serif;);
+	    	text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+	    }
+	    .font1 {
+	    	font-family: Verdana (sans-serif;);
+	    	word-wrap: break-word; 
+            overflow-wrap: break-word;
+	    }
+	    .hfont {
+	    	font-family: Verdana (sans-serif;);
+	    	font-size: 12px;
+	    }
+	    .text-glow {
+		  transition: all 0.3s ease;
+		}
+
+		.text-glow:hover {
+		  color: black;
+		  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange;
+		}
+		.zoom {
+		  transition: transform 0.3s ease;
+		}
+
+		.zoom:hover {
+		  transform: scale(1.1); /* Slight zoom, 10% larger */
+		}
+		.glow {
+		  box-shadow: 0 0 0px black, 0 0 0px black, 0 0 10px black;
+		  transition: box-shadow 0.3s ease;
+		}
+
+		.glow:hover {
+		  box-shadow: 0 0 20px #ff9800, 0 0 40px #ff9800, 0 0 60px #ff9800;
+		}
+		footer {
+			background-color: #e16b19;
+			box-shadow: 0 0 0px black, 0 0 0px black, 0 0 10px black;
+		}
+		.fade-in {
+		  opacity: 0;
+		  transition: opacity 2s ease-out, transform 2s ease-out;
+		}
+
+		.fade-in.visible {
+		  opacity: 1;
+		  transform: translateY(0); 
+		}
+		.achieves {
+			width: 250px;
+			height: 200px;
+			background-color: #e16b19;
+			box-shadow: 0 0 0px black, 0 0 0px black, 0 0 10px black;
+			padding: 10px;
+			border-radius: 50px;
+			margin: auto;
+		}
+		
+	</style>
+	<body>
+		<header>
+			<div class="w3-bar w3-top nav">
+			  <a href="contact.html" class="w3-bar-item w3-button hfont w3-right zoom"><b>CONTACTS</b></a>
+			  <a href="achieve.html" class="w3-bar-item w3-button hfont w3-right zoom"><b>ACHIEVEMENTS</b></a>
+			  <a href="skills.html" class="w3-bar-item w3-button hfont w3-right zoom"><b>SKILLS</b></a>
+			  <a href="index.html" class="w3-bar-item w3-button hfont w3-right zoom"><b>HOME</b></a>
+			</div>
+		</header>
+
+		<div id="achieve">
+			<br>
+			<h1 class="font fade-in"><b>ACHIEVEMENTS --------</b></h1>
+
+			<div>
+				<div class="fade-in">
+					<div class="achieves zoom" style="margin-top: 30px;">
+						<h5 class="w3-center font1 w3-text-black"><b>2023 - 2024 Champion Inter Purok</b></h5>
+						<p class="font1 w3-center">Champion of the 2023-2024 Inter-Purok basketball tournament.</p>
+					</div>
+				</div>
+				<div class="fade-in">
+					<div class="achieves zoom" style="margin-top: 50px;">
+						<h5 class="w3-center font1 w3-text-black"><b>2019 - 2020 Mythical 5 Inter Club</b></h5>
+						<p class="font1 w3-center">Named to the Mythical 5 in the 2019-2020 Inter-Club division for outstanding basketball performance.</p>
+					</div>
+				</div>
+				<div class="fade-in">
+					<div class="achieves zoom" style="margin-top: 50px;">
+						<h5 class="w3-center font1 w3-text-black"><b>2018 - 2019 Mythical 5 3x3 Kasapi</b></h5>
+						<p class="font1 w3-center">Chosen for the Mythical 5 in the 2018-2019 3x3 Kasapi tournament for exceptional play.</p>
+					</div>
+				</div>
+				<div class="fade-in">
+					<div class="achieves zoom" style="margin-top: 50px;">
+						<h5 class="w3-center font1 w3-text-black"><b>2017 -2018 Mythical 5 Midget Division</b></h5>
+						<p class="font1 w3-center">Selected as part of the 2017-2018 Mythical 5 in the Midget Division, recognizing my basketball performance.</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+		
+		<footer>
+			<br>
+			<p class="w3-center font">@Copyright 2024</p>
+			<p class="w3-center font">Buenaventura & Jacinto</p>
+			<br>
+		</footer>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function () {
+			  const fadeElements = document.querySelectorAll('.fade-in');
+
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add('visible');
+			      } else {
+			        entry.target.classList.remove('visible'); // Remove class when out of view
+			      }
+			    });
+			  }, {
+			    threshold: 0.1 // Trigger when 10% of the element is visible
+			  });
+
+			  fadeElements.forEach(element => {
+			    observer.observe(element);
+			  });
+			});
+		</script>
+
+		</script>
+
+	</body>
+</html>

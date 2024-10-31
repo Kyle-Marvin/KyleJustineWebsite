@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css\main.css">
+		<title>Skills</title>
+	</head>
+	<style type="text/css">
+	    body {
+	      background-image: url('images/background2.jpg'); 
+	      background-size: cover;
+	      background-repeat: no-repeat;
+	      background-size: 100% 100%;
+	      font-family: Courier (sans-serif);
+	      text-shadow: 2px 2px 5px rgba(0, 0, 0, 15);
+	      color: white;
+	    }
+	    .nav {
+	    	background-color: #e16b19; 
+	    	padding-right: 25px; 
+	    	box-shadow: 0 0 0px black, 0 0 0px black, 0 0 10px black;
+	    }
+	    header {
+	    	background-color: #e16b19;
+	    }
+	    .font {
+	    	font-family: Verdana (sans-serif;);
+	    	text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+	    }
+	    .hfont {
+	    	font-family: Verdana (sans-serif;);
+	    	font-size: 12px;
+	    }
+	    .text-glow {
+		  transition: all 0.3s ease;
+		}
+
+		.text-glow:hover {
+		  color: black;
+		  text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange;
+		}
+		.zoom {
+		  transition: transform 0.3s ease;
+		}
+
+		.zoom:hover {
+		  transform: scale(1.1); /* Slight zoom, 10% larger */
+		}
+		.glow {
+		  box-shadow: 0 0 0px black, 0 0 0px black, 0 0 10px black;
+		  transition: box-shadow 0.3s ease;
+		}
+
+		.glow:hover {
+		  box-shadow: 0 0 20px #ff9800, 0 0 40px #ff9800, 0 0 60px #ff9800;
+		}
+		footer {
+			background-color: #e16b19;
+			box-shadow: 0 0 0px black, 0 0 0px black, 0 0 10px black;
+		}
+		.fade-in {
+		  opacity: 0;
+		  transition: opacity 2s ease-out, transform 2s ease-out;
+		}
+
+		.fade-in.visible {
+		  opacity: 1;
+		  transform: translateY(0); 
+		}
+		#skills	 {
+	    	margin-left: 50px;
+	    	margin-top: 30px;
+	    	margin-bottom: 200px;
+	    }
+	    .sg {
+	    	filter: invert(1);
+	    	margin-left: 70px;
+	    	margin-top: 20px;
+	    	height: 450px;
+	    }
+	    .inline {
+			display: inline-block;
+			vertical-align: top
+		}
+		.hometext {
+	    	margin-top: 80px;
+	    	font-size: 60px;
+	    	color: orange;
+	    }
+	    .font {
+	    	font-family: Verdana (sans-serif;);
+	    	text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+	    }
+	    .sginfo {
+	    	margin-left: 200px;
+	    }
+	    .custom-tooltip-container {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		.custom-tooltip-btn {
+		  padding: 12px 25px;
+		  font-size: 14px;
+		  font-weight: bold;
+		  color: #ffffff;
+		  background-color: #e16b19;
+		  border: none;
+		  border-radius: 8px;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease;
+		  box-shadow: 0 8px 15px rgba(50, 25, 0, 0.6);
+		}
+
+		.custom-tooltip-btn:hover {
+		  background-color: #e16b19;
+		}
+
+		.custom-tooltip-content {
+		  position: absolute;
+		  bottom: 140%;
+		  left: 50%;
+		  transform: translateX(-50%);
+		  visibility: hidden;
+		  opacity: 0;
+		  width: 240px;
+		  background: linear-gradient(135deg, #e16b19 0%, #e16b19 100%);
+		  color: #fff;
+		  text-align: center;
+		  padding: 15px;
+		  font-size: 14px;
+		  border-radius: 15px;
+		  transition: all 0.4s ease;
+		  z-index: 1;
+		  box-shadow: 0 8px 15px rgba(50, 25, 0, 0.6);
+		  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+		}
+
+		.custom-tooltip-container:hover .custom-tooltip-content {
+		  visibility: visible;
+		  opacity: 1;
+		  transform: translateX(-50%) translateY(-10px);
+		}
+
+		.custom-tooltip-arrow {
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -10px;
+		  width: 0;
+		  height: 0;
+		  border-left: 10px solid transparent;
+		  border-right: 10px solid transparent;
+		  border-top: 10px solid #e16b19;
+		}
+
+		.custom-tooltip-text {
+		  font-size: 14px;
+		  line-height: 1.5;
+		  letter-spacing: 0.5px;
+		}
+
+	</style>
+	<body>
+		<header>
+			<div class="w3-bar w3-top nav">
+			  <a href="contact.html" class="w3-bar-item w3-button hfont w3-right zoom"><b>CONTACTS</b></a>
+			  <a href="achieve.html" class="w3-bar-item w3-button hfont w3-right zoom"><b>ACHIEVEMENTS</b></a>
+			  <a href="skills.html" class="w3-bar-item w3-button hfont w3-right zoom"><b>SKILLS</b></a>
+			  <a href="index.html" class="w3-bar-item w3-button hfont w3-right zoom"><b>HOME</b></a>
+			</div>
+		</header>
+
+		<div id="skills">
+			<br>
+			<h1 class="font fade-in"><b>SKILLS --------</b></h1>
+			<div class="inline">
+				<img src="images/sg.png" class="sg fade-in">
+			</div>
+			<div class="inline sginfo fade-in">
+				<h1 class="hometext font text-glow"><b>SHOOTING GUARD</b></h1>
+				<div style="width: 600px">
+					<p class="font w3-justify" style="margin-left: -50px; font-size: 19px">The shooting guard (SG), also known as the two, two guard or off guard, is one of the five traditional positions in a regulation basketball game. A shooting guard's main objective is to score points for their team and steal the ball on defense. Some teams ask their shooting guards to bring up the ball as well; these players are known colloquially as combo guards.</p>
+				</div>	
+			</div>
+			<div style="margin-left: 250px; margin-top: 80px;" class="fade-in">
+				<div class="custom-tooltip-container zoom" style="margin-right: 20px;">
+					<button class="custom-tooltip-btn font">Shooting Accuracy</button>
+					<div class="custom-tooltip-content">
+					    <span class="custom-tooltip-arrow"></span>
+					    <p class="custom-tooltip-text font">
+					      A shooting guard is often the primary scorer from the perimeter, needing consistent shooting accuracy from mid-range and three-point distance.
+					    </p>
+					</div>
+				</div>
+				<div class="custom-tooltip-container zoom" style="margin-right: 20px;">
+					<button class="custom-tooltip-btn font">Ball Handling</button>
+					<div class="custom-tooltip-content">
+					    <span class="custom-tooltip-arrow"></span>
+					    <p class="custom-tooltip-text font">
+					      Strong ball-handling skills are crucial for creating their own shot and navigating through defenders.
+					    </p>
+					</div>
+				</div>
+				<div class="custom-tooltip-container zoom" style="margin-right: 20px;">
+					<button class="custom-tooltip-btn font">Off-Ball Movement</button>
+					<div class="custom-tooltip-content">
+					    <span class="custom-tooltip-arrow"></span>
+					    <p class="custom-tooltip-text font">
+					      A shooting guard excels at moving without the ball, running off screens, and finding open spots to catch and shoot.
+					    </p>
+					</div>
+				</div>
+				<div class="custom-tooltip-container zoom" style="margin-right: 20px;">
+					<button class="custom-tooltip-btn font">Defensive Ability</button>
+					<div class="custom-tooltip-content">
+					    <span class="custom-tooltip-arrow"></span>
+					    <p class="custom-tooltip-text font">
+					      They often guard the opposing team’s best perimeter players, so lateral quickness, defensive IQ, and the ability to contest shots are essential.
+					    </p>
+					</div>
+				</div>
+			</div>
+			<div style="margin-left: 320px; margin-top: 70px;" class="fade-in">
+				<div class="custom-tooltip-container zoom" style="margin-right: 20px;">
+					<button class="custom-tooltip-btn font">Passing and Playmaking</button>
+					<div class="custom-tooltip-content">
+					    <span class="custom-tooltip-arrow"></span>
+					    <p class="custom-tooltip-text font">
+					      Though not always the primary playmaker, a shooting guard should have solid passing skills to assist teammates when drawing defensive attention.
+					    </p>
+					</div>
+				</div>
+				<div class="custom-tooltip-container zoom" style="margin-right: 20px;">
+					<button class="custom-tooltip-btn font">Athleticism and Agility</button>
+					<div class="custom-tooltip-content">
+					    <span class="custom-tooltip-arrow"></span>
+					    <p class="custom-tooltip-text font">
+					      Though not always the primary playmaker, a shooting guard should have solid passing skills to assist teammates when drawing defensive attention.
+					    </p>
+					</div>
+				</div>
+				<div class="custom-tooltip-container zoom" style="margin-right: 20px;">
+					<button class="custom-tooltip-btn font">Basketball IQ</button>
+					<div class="custom-tooltip-content">
+					    <span class="custom-tooltip-arrow"></span>
+					    <p class="custom-tooltip-text font">
+					      A good understanding of spacing, timing, and decision-making on both offense and defense.
+					    </p>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+
+		
+		<footer>
+			<br>
+			<p class="w3-center font">@Copyright 2024</p>
+			<p class="w3-center font">Buenaventura & Jacinto</p>
+			<br>
+		</footer>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function () {
+			  const fadeElements = document.querySelectorAll('.fade-in');
+
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add('visible');
+			      } else {
+			        entry.target.classList.remove('visible'); // Remove class when out of view
+			      }
+			    });
+			  }, {
+			    threshold: 0.1 // Trigger when 10% of the element is visible
+			  });
+
+			  fadeElements.forEach(element => {
+			    observer.observe(element);
+			  });
+			});
+		</script>
+
+		</script>
+
+	</body>
+</html>
